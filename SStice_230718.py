@@ -179,9 +179,139 @@
 # catalog[3][2] = '목표 달성의 비밀'
 
 # print('catalog와 backup_catalog를 비교한 결과')
-# print(bool(catalog==backup_catalog))
+# print(catalog is backup_catalog)
+# # print(bool(catalog==backup_catalog))
 # print('backup_catalog : ')
 # print(backup_catalog)
 # print()
 # print('catalog : ')
 # print(catalog)
+
+
+##################################
+
+# catalog = [
+#     ['1', '2', '3'],
+#     ['4', '5', '6'],
+#     ['7', '8', '9']
+# ]
+
+# backup_catalog = str(catalog)
+
+# catalog[2][0] = '한 걸음'
+# catalog[2][1] = '변화'
+# catalog[2][2] = '목표'
+
+
+# print (backup_catalog)
+
+
+# catalog = [
+#     ['1', '2', '3'],
+#     ['4', '5', '6'],
+#     ['7', '8', '9']
+# ]
+
+
+# print(id(catalog))
+
+# backup_catalog = tuple(catalog)
+# print(id(backup_catalog))
+
+# backup_catalog = str(catalog)
+# print(id(backup_catalog)) 
+
+
+######################################
+
+
+
+# 3.2.1
+ 
+# num = int(input())
+
+# def korean_number(num):
+#     if num == 1:
+#         return '일'
+#     elif num == 2:
+#         return '이'
+#     elif num == 3:
+#         return '삼'
+#     elif num == 4:
+#         return '사'
+#     elif num == 5:
+#         return '오'
+#     elif num == 6:
+#         return '육'
+#     elif num == 7:
+#         return '칠'
+#     elif num == 8:
+#         return '팔'
+#     elif num == 9:
+#         return '구'
+#     elif num == 10:
+#         return '십'
+    
+# print(korean_number(num))
+
+
+
+# 3.2.2 .1
+
+# def triple(x):
+#     return x * 3
+     
+# print(triple(2))
+# print(triple('x'))
+
+# 3.2.2 .2
+
+# def korean_age():
+#     from datetime import datetime
+#     today = datetime.today()
+
+#     return (int(today.year) - int(input()) + 1)
+
+
+# print (korean_age())
+
+
+
+#3.2.3 .1
+
+# p = float(input())
+# r = float(input())
+# t = float(input())
+
+
+
+# def simple_interest():
+#     return p * r * t
+
+# print (simple_interest())
+
+
+
+#3.2.3 .2
+
+# p = float(input())
+# r = float(input())
+# t = float(input())
+
+
+
+# def simple_interest_amount():
+#     return p + (p * r * t)
+
+# print (simple_interest_amount())
+
+
+
+# 3.2.4
+
+# def compound_interest_amout(p, r, t, n):
+#     return p * (1 + r/n) ** (n*t)
+    
+
+# print(compound_interest_amout(1500000, 0.043, 6, 1/2))
+
